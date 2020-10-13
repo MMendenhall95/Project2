@@ -20,7 +20,7 @@ public class MidtermPt2 {
 
     }
 
-    public static int[] binarySearchSorted(int[] num, int sum) {
+    public static int[] binarySearch(int[] num, int sum) {
         int value = 0;
         int[] results = new int[2];
         for (int i = 0; i < num.length; i++) {
@@ -85,10 +85,10 @@ public class MidtermPt2 {
         printValues(bruteforce(mill, sum), mill, sum);
 
         System.out.println("\nUNSORTED BINARY SEARCH:");
-        printValues(binarySearchSorted(hun, sum), hun, sum);
-        printValues(binarySearchSorted(thou, sum), thou, sum);
-        printValues(binarySearchSorted(hunThou, sum), hunThou, sum);
-        printValues(binarySearchSorted(mill, sum), mill, sum);
+        printValues(binarySearch(hun, sum), hun, sum);
+        printValues(binarySearch(thou, sum), thou, sum);
+        printValues(binarySearch(hunThou, sum), hunThou, sum);
+        printValues(binarySearch(mill, sum), mill, sum);
 
         System.out.println("\nSORTED BRUTE FORCE:");
 
@@ -104,10 +104,10 @@ public class MidtermPt2 {
         printValues(bruteforce(mill, sum), mill, sum);
 
         System.out.println("\nSORTED BINARY SEARCH:");
-        printValues(binarySearchSorted(hun, sum), hun, sum);
-        printValues(binarySearchSorted(thou, sum), thou, sum);
-        printValues(binarySearchSorted(hunThou, sum), hunThou, sum);
-        printValues(binarySearchSorted(mill, sum), mill, sum);
+        printValues(binarySearch(hun, sum), hun, sum);
+        printValues(binarySearch(thou, sum), thou, sum);
+        printValues(binarySearch(hunThou, sum), hunThou, sum);
+        printValues(binarySearch(mill, sum), mill, sum);
     }
 
 }
